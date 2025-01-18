@@ -501,7 +501,7 @@ In this measurement, the UDP payload size is set to 1400 bytes.
 | c | UPG-VPP v1.13.0 | 2024.03.25 | 6.87 | 593.79 / 800 | 6.94 | 585.1 / 900 |
 | d | eUPF v0.6.4 (native mode) | 2024.12.23 | 1.15 | 99.22 / 150 | 2.36 | 198.36 / 250 |
 
-<details><summary>a-1. Open5GS UPF v2.7.2 (TUN)</summary>
+<details><summary>a-1. logs for Open5GS UPF v2.7.2 (TUN)</summary>
 
 **UpLink measurement**
 ```
@@ -608,7 +608,7 @@ tui>
 
 </details>
 
-<details><summary>a-2. Open5GS UPF v2.7.2 (TAP)</summary>
+<details><summary>a-2. logs for Open5GS UPF v2.7.2 (TAP)</summary>
 
 **UpLink measurement**
 ```
@@ -715,7 +715,7 @@ tui>
 
 </details>
 
-<details><summary>b. free5GC UPF v1.2.4</summary>
+<details><summary>b. logs for free5GC UPF v1.2.4</summary>
 
 **UpLink measurement**
 ```
@@ -822,7 +822,7 @@ tui>
 
 </details>
 
-<details><summary>c. UPG-VPP v1.13.0</summary>
+<details><summary>c. logs for UPG-VPP v1.13.0</summary>
 
 **UpLink measurement**
 ```
@@ -929,7 +929,7 @@ tui>
 
 </details>
 
-<details><summary>d. eUPF v0.6.4</summary>
+<details><summary>d. logs for eUPF v0.6.4</summary>
 
 **UpLink measurement**
 ```
