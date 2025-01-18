@@ -34,7 +34,6 @@ And this is a very simple measurement, and according to [this comment](https://g
   - [c. Network settings of UPG-VPP](#network_settings_up_c)
   - [d. Network settings of eUPF](#network_settings_up_d)
 - [Build Simple PFCP Client, TRex and UPFs](#build)
-  - [Build go-upf](#build_up_b)
 - [Run Simple PFCP Client, TRex and UPFs](#run)
   - [Run UPFs](#run_up)
     - [a-1. Run Open5GS 5GC UPF (TUN)](#run_up_a1)
@@ -412,23 +411,9 @@ Please refer to the following for building Simple PFCP Client, TRex and UPFs res
 - Simple PFCP Client (2025.01.16) - https://github.com/s5uishida/simple_pfcp_client
 - TRex v3.06 (2024.09.17) - https://github.com/s5uishida/install_trex
 - Open5GS v2.7.2 (2025.01.12) - https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
-- free5GC UPF (go-upf) v1.2.4 (2025.01.02) - https://free5gc.org/guide/
+- free5GC UPF (go-upf) v1.2.4 (2025.01.02) - https://github.com/s5uishida/install_goupf
 - UPG-VPP v1.13.0 (2024.03.25) - https://github.com/s5uishida/install_vpp_upf_dpdk#annex_1
 - eUPF v0.6.4 (2024.12.23) - https://github.com/s5uishida/install_eupf
-
-<a id="build_up_b"></a>
-
-### Build go-upf
-
-Please refer to the free5GC guide at the above URL for building free5GC UPF. Below show only the differences in the procedure.
-```
-# git clone https://github.com/free5gc/go-upf.git
-# cd go-upf
-# CGO_ENABLED=0 go build -o upf cmd/main.go
-# ls upf
-upf
-# wget https://raw.githubusercontent.com/free5gc/free5gc/main/config/upfcfg.yaml
-```
 
 <a id="run"></a>
 
