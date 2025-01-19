@@ -510,12 +510,12 @@ start -f stl/gtp_1pkt_simple.py -p 0 -m 150kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 1.79 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 1.81 Gbps                      
-cpu_util.    : 1.68% @ 1 cores (1 per dual port)          total_rx     : 1.08 Gbps                      
-rx_cpu_util. : 0.18% / 93.65 Kpps                         total_pps    : 150.07 Kpps                    
-async_util.  : 0% / 4.79 bps                              drop_rate    : 705.53 Mbps                    
-total_cps.   : 0 cps                                      queue_full   : 12,034 pkts                    
+connection   : localhost, Port 4501                       total_tx_L2  : 1.79 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 1.81 Gbps
+cpu_util.    : 1.68% @ 1 cores (1 per dual port)          total_rx     : 1.08 Gbps
+rx_cpu_util. : 0.18% / 93.65 Kpps                         total_pps    : 150.07 Kpps
+async_util.  : 0% / 4.79 bps                              drop_rate    : 705.53 Mbps
+total_cps.   : 0 cps                                      queue_full   : 12,034 pkts
 
 Port Statistics
 
@@ -561,12 +561,12 @@ start -f stl/udp_1pkt_simple.py -p 1 -m 150kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 1.74 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 1.76 Gbps                      
-cpu_util.    : 1.89% @ 1 cores (1 per dual port)          total_rx     : 1.33 Gbps                      
-rx_cpu_util. : 0.21% / 111.87 Kpps                        total_pps    : 150.36 Kpps                    
-async_util.  : 0% / 9.02 bps                              drop_rate    : 413.05 Mbps                    
-total_cps.   : 0 cps                                      queue_full   : 3,817 pkts                     
+connection   : localhost, Port 4501                       total_tx_L2  : 1.74 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 1.76 Gbps
+cpu_util.    : 1.89% @ 1 cores (1 per dual port)          total_rx     : 1.33 Gbps
+rx_cpu_util. : 0.21% / 111.87 Kpps                        total_pps    : 150.36 Kpps
+async_util.  : 0% / 9.02 bps                              drop_rate    : 413.05 Mbps
+total_cps.   : 0 cps                                      queue_full   : 3,817 pkts
 
 Port Statistics
 
@@ -617,12 +617,12 @@ start -f stl/gtp_1pkt_simple.py -p 0 -m 150kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 1.79 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 1.81 Gbps                      
-cpu_util.    : 1.56% @ 1 cores (1 per dual port)          total_rx     : 1.16 Gbps                      
-rx_cpu_util. : 0.1% / 100.07 Kpps                         total_pps    : 150.14 Kpps                    
-async_util.  : 0% / 7.67 bps                              drop_rate    : 632.05 Mbps                    
-total_cps.   : 0 cps                                      queue_full   : 5,803 pkts                     
+connection   : localhost, Port 4501                       total_tx_L2  : 1.79 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 1.81 Gbps
+cpu_util.    : 1.56% @ 1 cores (1 per dual port)          total_rx     : 1.16 Gbps
+rx_cpu_util. : 0.1% / 100.07 Kpps                         total_pps    : 150.14 Kpps
+async_util.  : 0% / 7.67 bps                              drop_rate    : 632.05 Mbps
+total_cps.   : 0 cps                                      queue_full   : 5,803 pkts
 
 Port Statistics
 
@@ -668,12 +668,12 @@ start -f stl/udp_1pkt_simple.py -p 1 -m 150kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 1.74 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 1.76 Gbps                      
-cpu_util.    : 1.51% @ 1 cores (1 per dual port)          total_rx     : 1.17 Gbps                      
-rx_cpu_util. : 0.08% / 98.55 Kpps                         total_pps    : 150.11 Kpps                    
-async_util.  : 0% / 7.77 bps                              drop_rate    : 568.03 Mbps                    
-total_cps.   : 0 cps                                      queue_full   : 4,638 pkts                     
+connection   : localhost, Port 4501                       total_tx_L2  : 1.74 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 1.76 Gbps
+cpu_util.    : 1.51% @ 1 cores (1 per dual port)          total_rx     : 1.17 Gbps
+rx_cpu_util. : 0.08% / 98.55 Kpps                         total_pps    : 150.11 Kpps
+async_util.  : 0% / 7.77 bps                              drop_rate    : 568.03 Mbps
+total_cps.   : 0 cps                                      queue_full   : 4,638 pkts
 
 Port Statistics
 
@@ -724,12 +724,12 @@ start -f stl/gtp_1pkt_simple.py -p 0 -m 500kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 5.96 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 6.04 Gbps                      
-cpu_util.    : 5.39% @ 1 cores (1 per dual port)          total_rx     : 4.8 Gbps                       
-rx_cpu_util. : 0.23% / 414.59 Kpps                        total_pps    : 500.31 Kpps                    
-async_util.  : 0% / 8.98 bps                              drop_rate    : 1.17 Gbps                      
-total_cps.   : 0 cps                                      queue_full   : 27,815 pkts                    
+connection   : localhost, Port 4501                       total_tx_L2  : 5.96 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 6.04 Gbps
+cpu_util.    : 5.39% @ 1 cores (1 per dual port)          total_rx     : 4.8 Gbps
+rx_cpu_util. : 0.23% / 414.59 Kpps                        total_pps    : 500.31 Kpps
+async_util.  : 0% / 8.98 bps                              drop_rate    : 1.17 Gbps
+total_cps.   : 0 cps                                      queue_full   : 27,815 pkts
 
 Port Statistics
 
@@ -775,12 +775,12 @@ start -f stl/udp_1pkt_simple.py -p 1 -m 350kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 4.05 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 4.11 Gbps                      
-cpu_util.    : 4.23% @ 1 cores (1 per dual port)          total_rx     : 3.03 Gbps                      
-rx_cpu_util. : 0.33% / 254.98 Kpps                        total_pps    : 350.09 Kpps                    
-async_util.  : 0% / 7.52 bps                              drop_rate    : 1.02 Gbps                      
-total_cps.   : 0 cps                                      queue_full   : 55,554 pkts                    
+connection   : localhost, Port 4501                       total_tx_L2  : 4.05 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 4.11 Gbps
+cpu_util.    : 4.23% @ 1 cores (1 per dual port)          total_rx     : 3.03 Gbps
+rx_cpu_util. : 0.33% / 254.98 Kpps                        total_pps    : 350.09 Kpps
+async_util.  : 0% / 7.52 bps                              drop_rate    : 1.02 Gbps
+total_cps.   : 0 cps                                      queue_full   : 55,554 pkts
 
 Port Statistics
 
@@ -831,12 +831,12 @@ start -f stl/gtp_1pkt_simple.py -p 0 -m 800kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 9.42 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 9.55 Gbps                      
-cpu_util.    : 12.54% @ 1 cores (1 per dual port)         total_rx     : 6.87 Gbps                      
-rx_cpu_util. : 0.72% / 593.79 Kpps                        total_pps    : 790.31 Kpps                    
-async_util.  : 0% / 9.16 bps                              drop_rate    : 2.55 Gbps                      
-total_cps.   : 0 cps                                      queue_full   : 1,064,989 pkts                 
+connection   : localhost, Port 4501                       total_tx_L2  : 9.42 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 9.55 Gbps
+cpu_util.    : 12.54% @ 1 cores (1 per dual port)         total_rx     : 6.87 Gbps
+rx_cpu_util. : 0.72% / 593.79 Kpps                        total_pps    : 790.31 Kpps
+async_util.  : 0% / 9.16 bps                              drop_rate    : 2.55 Gbps
+total_cps.   : 0 cps                                      queue_full   : 1,064,989 pkts
 
 Port Statistics
 
@@ -882,12 +882,12 @@ start -f stl/udp_1pkt_simple.py -p 1 -m 900kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 10.31 Gbps                     
-version      : STL @ v3.06                                total_tx_L1  : 10.45 Gbps                     
-cpu_util.    : 12.13% @ 1 cores (1 per dual port)         total_rx     : 6.94 Gbps                      
-rx_cpu_util. : 0.67% / 585.1 Kpps                         total_pps    : 891.25 Kpps                    
-async_util.  : 0% / 7.3 bps                               drop_rate    : 3.37 Gbps                      
-total_cps.   : 0 cps                                      queue_full   : 746,833 pkts                   
+connection   : localhost, Port 4501                       total_tx_L2  : 10.31 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 10.45 Gbps
+cpu_util.    : 12.13% @ 1 cores (1 per dual port)         total_rx     : 6.94 Gbps
+rx_cpu_util. : 0.67% / 585.1 Kpps                         total_pps    : 891.25 Kpps
+async_util.  : 0% / 7.3 bps                               drop_rate    : 3.37 Gbps
+total_cps.   : 0 cps                                      queue_full   : 746,833 pkts
 
 Port Statistics
 
@@ -938,12 +938,12 @@ start -f stl/gtp_1pkt_simple.py -p 0 -m 150kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 1.79 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 1.82 Gbps                      
-cpu_util.    : 1.49% @ 1 cores (1 per dual port)          total_rx     : 1.15 Gbps                      
-rx_cpu_util. : 0.22% / 99.22 Kpps                         total_pps    : 150.26 Kpps                    
-async_util.  : 0% / 9.85 bps                              drop_rate    : 643.32 Mbps                    
-total_cps.   : 0 cps                                      queue_full   : 4,916 pkts                     
+connection   : localhost, Port 4501                       total_tx_L2  : 1.79 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 1.82 Gbps
+cpu_util.    : 1.49% @ 1 cores (1 per dual port)          total_rx     : 1.15 Gbps
+rx_cpu_util. : 0.22% / 99.22 Kpps                         total_pps    : 150.26 Kpps
+async_util.  : 0% / 9.85 bps                              drop_rate    : 643.32 Mbps
+total_cps.   : 0 cps                                      queue_full   : 4,916 pkts
 
 Port Statistics
 
@@ -989,12 +989,12 @@ start -f stl/udp_1pkt_simple.py -p 1 -m 250kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 2.89 Gbps                      
-version      : STL @ v3.06                                total_tx_L1  : 2.93 Gbps                      
-cpu_util.    : 2.4% @ 1 cores (1 per dual port)           total_rx     : 2.36 Gbps                      
-rx_cpu_util. : 0.19% / 198.36 Kpps                        total_pps    : 250.12 Kpps                    
-async_util.  : 0% / 9.77 bps                              drop_rate    : 528.87 Mbps                    
-total_cps.   : 0 cps                                      queue_full   : 43,322 pkts                    
+connection   : localhost, Port 4501                       total_tx_L2  : 2.89 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 2.93 Gbps
+cpu_util.    : 2.4% @ 1 cores (1 per dual port)           total_rx     : 2.36 Gbps
+rx_cpu_util. : 0.19% / 198.36 Kpps                        total_pps    : 250.12 Kpps
+async_util.  : 0% / 9.77 bps                              drop_rate    : 528.87 Mbps
+total_cps.   : 0 cps                                      queue_full   : 43,322 pkts
 
 Port Statistics
 
