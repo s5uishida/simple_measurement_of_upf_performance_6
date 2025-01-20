@@ -499,7 +499,7 @@ In this measurement, the UDP payload size is set to 1400 bytes.
 | a-2 | Open5GS UPF v2.7.2 (TAP) | 2025.01.12 | 1.16 | 100.07 / 150 | 1.17 | 98.55 / 150 |
 | b | free5GC UPF v1.2.4 | 2025.01.02 | 4.8 | 414.59 / 500 | 3.03 | 254.98 / 350 |
 | c | UPG-VPP v1.13.0 | 2024.03.25 | 6.87 | 593.79 / 800 | 6.94 | 585.1 / 900 |
-| d | eUPF v0.6.4 (native mode) | 2024.12.23 | 1.15 | 99.22 / 150 | 2.36 | 198.36 / 250 |
+| d | eUPF v0.6.4 (native mode) | 2024.12.23 | 9.42 | 814.75 / 1000 | 9.59 | 804.51 / 1000 |
 
 <details><summary>a-1. logs for Open5GS UPF v2.7.2 (TUN)</summary>
 
@@ -933,17 +933,17 @@ tui>
 
 **UpLink measurement**
 ```
-start -f stl/gtp_1pkt_simple.py -p 0 -m 150kpps -d 60
+start -f stl/gtp_1pkt_simple.py -p 0 -m 1000kpps -d 60
 ```
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 1.79 Gbps
-version      : STL @ v3.06                                total_tx_L1  : 1.82 Gbps
-cpu_util.    : 1.49% @ 1 cores (1 per dual port)          total_rx     : 1.15 Gbps
-rx_cpu_util. : 0.22% / 99.22 Kpps                         total_pps    : 150.26 Kpps
-async_util.  : 0% / 9.85 bps                              drop_rate    : 643.32 Mbps
-total_cps.   : 0 cps                                      queue_full   : 4,916 pkts
+connection   : localhost, Port 4501                       total_tx_L2  : 11.67 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 11.82 Gbps
+cpu_util.    : 48.75% @ 1 cores (1 per dual port)         total_rx     : 9.42 Gbps
+rx_cpu_util. : 2.56% / 814.75 Kpps                        total_pps    : 978.83 Kpps
+async_util.  : 0% / 7.05 bps                              drop_rate    : 2.24 Gbps
+total_cps.   : 0 cps                                      queue_full   : 6,151,050 pkts
 
 Port Statistics
 
@@ -953,29 +953,29 @@ owner      |              root |              root |
 link       |                UP |                UP |                   
 state      |      TRANSMITTING |              IDLE |                   
 speed      |          200 Gb/s |          200 Gb/s |                   
-CPU util.  |             1.49% |              0.0% |                   
+CPU util.  |            48.75% |              0.0% |                   
 --         |                   |                   |                   
-Tx bps L2  |         1.79 Gbps |             0 bps |         1.79 Gbps 
-Tx bps L1  |         1.82 Gbps |             0 bps |         1.82 Gbps 
-Tx pps     |       150.26 Kpps |             0 pps |       150.26 Kpps 
-Line Util. |            0.91 % |               0 % |                   
+Tx bps L2  |        11.67 Gbps |             0 bps |        11.67 Gbps 
+Tx bps L1  |        11.82 Gbps |             0 bps |        11.82 Gbps 
+Tx pps     |       978.83 Kpps |             0 pps |       978.83 Kpps 
+Line Util. |            5.91 % |               0 % |                   
 ---        |                   |                   |                   
-Rx bps     |             0 bps |         1.15 Gbps |         1.15 Gbps 
-Rx pps     |             0 pps |        99.22 Kpps |        99.22 Kpps 
+Rx bps     |             0 bps |         9.42 Gbps |         9.42 Gbps 
+Rx pps     |             0 pps |       814.75 Kpps |       814.75 Kpps 
 ----       |                   |                   |                   
-opackets   |           1845128 |                 0 |           1845128 
-ipackets   |                 0 |           1217696 |           1217696 
-obytes     |        2749240720 |                 0 |        2749240720 
-ibytes     |                 0 |        1760788416 |        1760788416 
-tx-pkts    |        1.85 Mpkts |            0 pkts |        1.85 Mpkts 
-rx-pkts    |            0 pkts |        1.22 Mpkts |        1.22 Mpkts 
-tx-bytes   |           2.75 GB |               0 B |           2.75 GB 
-rx-bytes   |               0 B |           1.76 GB |           1.76 GB 
+opackets   |          15615464 |                 0 |          15615464 
+ipackets   |                 0 |          12287777 |          12287777 
+obytes     |       23267041360 |                 0 |       23267041360 
+ibytes     |                 0 |       17768125542 |       17768125542 
+tx-pkts    |       15.62 Mpkts |            0 pkts |       15.62 Mpkts 
+rx-pkts    |            0 pkts |       12.29 Mpkts |       12.29 Mpkts 
+tx-bytes   |          23.27 GB |               0 B |          23.27 GB 
+rx-bytes   |               0 B |          17.77 GB |          17.77 GB 
 -----      |                   |                   |                   
 oerrors    |                 0 |                 0 |                 0 
 ierrors    |                 0 |                 0 |                 0 
 
-status:  -
+status:  /
 
 Press 'ESC' for navigation panel...
 status: 
@@ -984,17 +984,17 @@ tui>
 ```
 **DownLink measurement**
 ```
-start -f stl/udp_1pkt_simple.py -p 1 -m 250kpps -d 60
+start -f stl/udp_1pkt_simple.py -p 1 -m 1000kpps -d 60
 ```
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 2.89 Gbps
-version      : STL @ v3.06                                total_tx_L1  : 2.93 Gbps
-cpu_util.    : 2.4% @ 1 cores (1 per dual port)           total_rx     : 2.36 Gbps
-rx_cpu_util. : 0.19% / 198.36 Kpps                        total_pps    : 250.12 Kpps
-async_util.  : 0% / 9.77 bps                              drop_rate    : 528.87 Mbps
-total_cps.   : 0 cps                                      queue_full   : 43,322 pkts
+connection   : localhost, Port 4501                       total_tx_L2  : 11.28 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 11.44 Gbps
+cpu_util.    : 15.33% @ 1 cores (1 per dual port)         total_rx     : 9.59 Gbps
+rx_cpu_util. : 2.55% / 804.51 Kpps                        total_pps    : 975.2 Kpps
+async_util.  : 0% / 6.56 bps                              drop_rate    : 1.69 Gbps
+total_cps.   : 0 cps                                      queue_full   : 1,138,697 pkts
 
 Port Statistics
 
@@ -1004,29 +1004,29 @@ owner      |              root |              root |
 link       |                UP |                UP |                   
 state      |              IDLE |      TRANSMITTING |                   
 speed      |          200 Gb/s |          200 Gb/s |                   
-CPU util.  |              0.0% |              2.4% |                   
+CPU util.  |              0.0% |            15.33% |                   
 --         |                   |                   |                   
-Tx bps L2  |             0 bps |         2.89 Gbps |         2.89 Gbps 
-Tx bps L1  |             0 bps |         2.93 Gbps |         2.93 Gbps 
-Tx pps     |             0 pps |       250.12 Kpps |       250.12 Kpps 
-Line Util. |               0 % |            1.47 % |                   
+Tx bps L2  |             0 bps |        11.28 Gbps |        11.28 Gbps 
+Tx bps L1  |             0 bps |        11.44 Gbps |        11.44 Gbps 
+Tx pps     |             0 pps |        975.2 Kpps |        975.2 Kpps 
+Line Util. |               0 % |            5.72 % |                   
 ---        |                   |                   |                   
-Rx bps     |         2.36 Gbps |             0 bps |         2.36 Gbps 
-Rx pps     |       198.36 Kpps |             0 pps |       198.36 Kpps 
+Rx bps     |         9.59 Gbps |             0 bps |         9.59 Gbps 
+Rx pps     |       804.51 Kpps |             0 pps |       804.51 Kpps 
 ----       |                   |                   |                   
-opackets   |                 0 |           5183596 |           5183596 
-ipackets   |           4126624 |                 0 |           4126624 
-obytes     |                 0 |        7495479816 |        7495479816 
-ibytes     |        6148669760 |                 0 |        6148669760 
-tx-pkts    |            0 pkts |        5.18 Mpkts |        5.18 Mpkts 
-rx-pkts    |        4.13 Mpkts |            0 pkts |        4.13 Mpkts 
-tx-bytes   |               0 B |            7.5 GB |            7.5 GB 
-rx-bytes   |           6.15 GB |               0 B |           6.15 GB 
+opackets   |                 0 |          11234257 |          11234257 
+ipackets   |           9226675 |                 0 |           9226675 
+obytes     |                 0 |       16244735622 |       16244735622 
+ibytes     |       13747745750 |                 0 |       13747745750 
+tx-pkts    |            0 pkts |       11.23 Mpkts |       11.23 Mpkts 
+rx-pkts    |        9.23 Mpkts |            0 pkts |        9.23 Mpkts 
+tx-bytes   |               0 B |          16.24 GB |          16.24 GB 
+rx-bytes   |          13.75 GB |               0 B |          13.75 GB 
 -----      |                   |                   |                   
 oerrors    |                 0 |                 0 |                 0 
 ierrors    |                 0 |                 0 |                 0 
 
-status:  \
+status:  |
 
 Press 'ESC' for navigation panel...
 status: 
@@ -1040,9 +1040,8 @@ tui>
 
 ### Summary
 
-These measurement results show that UPG-VPP has relatively outstanding performance even on Proxmox VE VM.
-The difference was significant compared to when PacketRusher or srsRAN were used.
-In particular, Open5GS and eUPF show significantly higher performance when measured with srsRAN. This suggests that the measurement environment, condition and tools have a large impact on the measurement results.
+These measurement results show that eUPF has relatively outstanding performance even on Proxmox VE VM.
+Also, Open5GS shows significantly higher performance when measured with srsRAN. This suggests that the measurement environment, condition and tools have a large impact on the measurement results.
 
 If measuring using virtual machines, it would be better to measure on VMs on a hypervisor such as Proxmox VE.
 Also, it is good to select VirtIO as the network interface to ensure that the network does not become a bottleneck in the measurement.
@@ -1145,4 +1144,5 @@ I would like to thank all the excellent developers and contributors who develope
 
 ## Changelog (summary)
 
+- [2025.01.20] Changed eUPF measurement to those measured using the binary that does not output kernel logs for debugging.
 - [2025.01.17] Initial release.
