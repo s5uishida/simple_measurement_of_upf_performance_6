@@ -495,11 +495,11 @@ In this measurement, the UDP payload size is set to 1400 bytes.
 
 | # | UPF | Date | UpLink<br>Gbps | UpLink<br>Kpps | DownLink<br>Gbps | DownLink<br>Kpps | 
 | --- | --- | --- | --- | --- | --- | --- |
-| a-1 | Open5GS UPF v2.7.2 (TUN) | 2025.01.12 | 1.08 | 93.65 / 150 | 1.33 | 111.87 / 150 |
-| a-2 | Open5GS UPF v2.7.2 (TAP) | 2025.01.12 | 1.16 | 100.07 / 150 | 1.17 | 98.55 / 150 |
-| b | free5GC UPF v1.2.4 | 2025.01.02 | 4.8 | 414.59 / 500 | 3.03 | 254.98 / 350 |
-| c | UPG-VPP v1.13.0 | 2024.03.25 | 6.87 | 593.79 / 800 | 6.94 | 585.1 / 900 |
-| d | eUPF v0.6.4 (native mode) | 2024.12.23 | 9.42 | 814.75 / 1000 | 9.59 | 804.51 / 1000 |
+| a-1 | Open5GS UPF v2.7.2 (TUN) | 2025.01.12 | 1.08 | 93.65 | 1.33 | 111.87 |
+| a-2 | Open5GS UPF v2.7.2 (TAP) | 2025.01.12 | 1.16 | 100.07 | 1.17 | 98.55 |
+| b | free5GC UPF v1.2.4 | 2025.01.02 | 4.8 | 414.59 | 3.03 | 254.98 |
+| c | UPG-VPP v1.13.0 | 2024.03.25 | 6.87 | 593.79 | 6.94 | 585.1 |
+| d | eUPF v0.6.4 (native mode) | 2024.12.23 | 9.42 | 814.75 | 9.59 | 804.51 |
 
 <details><summary>a-1. logs for Open5GS UPF v2.7.2 (TUN)</summary>
 
