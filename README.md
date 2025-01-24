@@ -499,7 +499,7 @@ In this measurement, the UDP payload size is set to 1400 bytes.
 | a-2 | Open5GS UPF v2.7.2 (TAP)<br>2025.01.12 | Tx:1.79<br>Rx:1.16 | Tx:150.14<br>Rx:100.07 | 1.56 | Tx:1.74<br>Rx:1.17 | Tx:150.11<br>Rx:98.55 | 1.51 |
 | b | free5GC UPF v1.2.4<br>2025.01.02 | Tx:5.96<br>Rx:4.8 | Tx:500.31<br>Rx:414.59 | 5.39 | Tx:4.05<br>Rx:3.03 | Tx:350.09<br>Rx:254.98 | 4.23 |
 | c | UPG-VPP v1.13.0<br>2024.03.25 | Tx:9.42<br>Rx:6.87 | Tx:790.31<br>Rx:593.79 | 12.54 | Tx:10.31<br>Rx:6.94 | Tx:891.25<br>Rx:585.1 | 12.13 |
-| d | eUPF v0.6.4 (native mode)<br>2024.12.23 | Tx:11.67<br>Rx:9.42 | Tx:978.83<br>Rx:814.75 | 48.75 | Tx:11.28<br>Rx:9.59 | Tx:975.2<br>Rx:804.51 | 15.33 |
+| d | eUPF v0.6.4 (native mode)<br>2024.12.23 | Tx:11.67<br>Rx:9.42 | Tx:978.83<br>Rx:814.75 | 48.75 | Tx:11.24<br>Rx:9.77 | Tx:971.56<br>Rx:819.85 | 44.25 |
 
 1. CPU load - per core of TRex VM (VM-TG). In this case only one core is used.
 
@@ -991,12 +991,12 @@ start -f stl/udp_1pkt_simple.py -p 1 -m 1000kpps -d 60
 ```
 Global Statistics
 
-connection   : localhost, Port 4501                       total_tx_L2  : 11.28 Gbps
-version      : STL @ v3.06                                total_tx_L1  : 11.44 Gbps
-cpu_util.    : 15.33% @ 1 cores (1 per dual port)         total_rx     : 9.59 Gbps
-rx_cpu_util. : 2.55% / 804.51 Kpps                        total_pps    : 975.2 Kpps
-async_util.  : 0% / 6.56 bps                              drop_rate    : 1.69 Gbps
-total_cps.   : 0 cps                                      queue_full   : 1,138,697 pkts
+connection   : localhost, Port 4501                       total_tx_L2  : 11.24 Gbps
+version      : STL @ v3.06                                total_tx_L1  : 11.39 Gbps
+cpu_util.    : 44.25% @ 1 cores (1 per dual port)         total_rx     : 9.77 Gbps
+rx_cpu_util. : 2.31% / 819.85 Kpps                        total_pps    : 971.56 Kpps
+async_util.  : 0% / 8.27 bps                              drop_rate    : 1.47 Gbps
+total_cps.   : 0 cps                                      queue_full   : 5,394,209 pkts
 
 Port Statistics
 
@@ -1006,29 +1006,29 @@ owner      |              root |              root |
 link       |                UP |                UP |                   
 state      |              IDLE |      TRANSMITTING |                   
 speed      |          200 Gb/s |          200 Gb/s |                   
-CPU util.  |              0.0% |            15.33% |                   
+CPU util.  |              0.0% |            44.25% |                   
 --         |                   |                   |                   
-Tx bps L2  |             0 bps |        11.28 Gbps |        11.28 Gbps 
-Tx bps L1  |             0 bps |        11.44 Gbps |        11.44 Gbps 
-Tx pps     |             0 pps |        975.2 Kpps |        975.2 Kpps 
-Line Util. |               0 % |            5.72 % |                   
+Tx bps L2  |             0 bps |        11.24 Gbps |        11.24 Gbps 
+Tx bps L1  |             0 bps |        11.39 Gbps |        11.39 Gbps 
+Tx pps     |             0 pps |       971.56 Kpps |       971.56 Kpps 
+Line Util. |               0 % |             5.7 % |                   
 ---        |                   |                   |                   
-Rx bps     |         9.59 Gbps |             0 bps |         9.59 Gbps 
-Rx pps     |       804.51 Kpps |             0 pps |       804.51 Kpps 
+Rx bps     |         9.77 Gbps |             0 bps |         9.77 Gbps 
+Rx pps     |       819.85 Kpps |             0 pps |       819.85 Kpps 
 ----       |                   |                   |                   
-opackets   |                 0 |          11234257 |          11234257 
-ipackets   |           9226675 |                 0 |           9226675 
-obytes     |                 0 |       16244735622 |       16244735622 
-ibytes     |       13747745750 |                 0 |       13747745750 
-tx-pkts    |            0 pkts |       11.23 Mpkts |       11.23 Mpkts 
-rx-pkts    |        9.23 Mpkts |            0 pkts |        9.23 Mpkts 
-tx-bytes   |               0 B |          16.24 GB |          16.24 GB 
-rx-bytes   |          13.75 GB |               0 B |          13.75 GB 
+opackets   |                 0 |          13702224 |          13702224 
+ipackets   |          11439568 |                 0 |          11439568 
+obytes     |                 0 |       19813415904 |       19813415904 
+ibytes     |       17044956320 |                 0 |       17044956320 
+tx-pkts    |            0 pkts |        13.7 Mpkts |        13.7 Mpkts 
+rx-pkts    |       11.44 Mpkts |            0 pkts |       11.44 Mpkts 
+tx-bytes   |               0 B |          19.81 GB |          19.81 GB 
+rx-bytes   |          17.04 GB |               0 B |          17.04 GB 
 -----      |                   |                   |                   
 oerrors    |                 0 |                 0 |                 0 
 ierrors    |                 0 |                 0 |                 0 
 
-status:  |
+status:  /
 
 Press 'ESC' for navigation panel...
 status: 
@@ -1146,5 +1146,6 @@ I would like to thank all the excellent developers and contributors who develope
 
 ## Changelog (summary)
 
+- [2025.01.25] Measured the DownLink performance of eUPF again.
 - [2025.01.20] Changed eUPF measurement to those measured using the binary that does not output kernel logs for debugging.
 - [2025.01.17] Initial release.
