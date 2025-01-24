@@ -493,13 +493,15 @@ Please see below for methods for measuring UpLink and DownLink performances.
 
 In this measurement, the UDP payload size is set to 1400 bytes.
 
-| # | UPF / Date | UpLink<br>Gbps | <br>Kpps | <br>CPU% | DownLink<br>Gbps | <br>Kpps | <br>CPU% |
+| # | UPF / Date | UpLink<br>Gbps | <br>Kpps | <br>CPU%[1] | DownLink<br>Gbps | <br>Kpps | <br>CPU%[1] |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | a-1 | Open5GS UPF v2.7.2 (TUN)<br>2025.01.12 | Tx:1.79<br>Rx:1.08 | Tx:150.07<br>Rx:93.65 | 1.68 | Tx:1.74<br>Rx:1.33 | Tx:150.36<br>Rx:111.87 | 1.89 |
 | a-2 | Open5GS UPF v2.7.2 (TAP)<br>2025.01.12 | Tx:1.79<br>Rx:1.16 | Tx:150.14<br>Rx:100.07 | 1.56 | Tx:1.74<br>Rx:1.17 | Tx:150.11<br>Rx:98.55 | 1.51 |
 | b | free5GC UPF v1.2.4<br>2025.01.02 | Tx:5.96<br>Rx:4.8 | Tx:500.31<br>Rx:414.59 | 5.39 | Tx:4.05<br>Rx:3.03 | Tx:350.09<br>Rx:254.98 | 4.23 |
 | c | UPG-VPP v1.13.0<br>2024.03.25 | Tx:9.42<br>Rx:6.87 | Tx:790.31<br>Rx:593.79 | 12.54 | Tx:10.31<br>Rx:6.94 | Tx:891.25<br>Rx:585.1 | 12.13 |
 | d | eUPF v0.6.4 (native mode)<br>2024.12.23 | Tx:11.67<br>Rx:9.42 | Tx:978.83<br>Rx:814.75 | 48.75 | Tx:11.28<br>Rx:9.59 | Tx:975.2<br>Rx:804.51 | 15.33 |
+
+1. CPU load - per core of TRex VM (VM-TG). In this case only one core is used.
 
 <details><summary>a-1. logs for Open5GS UPF v2.7.2 (TUN)</summary>
 
