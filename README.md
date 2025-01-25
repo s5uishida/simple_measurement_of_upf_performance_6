@@ -1057,7 +1057,7 @@ It is very simple mesurement and may not be very meaningful when measuring betwe
 I simply measured the raw communication performance between VM-TG and VM-DUT.
 This is a measurement of the N6 interface and therefore does not include communication over GTP-U.
 
-| A--B | 1) TCP<br>throughput | 2) UDP<br>throughput | 2) UDP<br>packet loss | 3) RTT<br>(msec) |
+| A--B | TCP[1]<br>throughput | UDP[2]<br>throughput | UDP[2]<br>packet loss | RTT[3]<br>(msec) |
 | --- | --- | --- | --- | --- |
 | VM-TG --(N6)-- VM-DUT | S:26.8 Gbps<br>R:26.8 Gbps | S:2.04 Gbps<br>R:2.03 Gbps | 0.4 % | 0.262 |
 
