@@ -85,7 +85,7 @@ Each VMs are as follows.
 | **VM-DUT** | **each UPF DUT<br>(Device Under Test)** | **192.168.0.151/24** | **Ubuntu 24.04<br>or 22.04** | **2** | **8GB** | **20GB** |
 
 **Each VM-DUT(UPFs) are as follows.**
-| # | SW / packet processing | Date | Commit | OS |
+| # | SW / *packet processing* | Date | Commit | OS |
 | --- | --- | --- | --- | --- |
 | a | Open5GS UPF v2.7.2<br>***user space*** | 2025.01.12 | `13585a34e3d5505dd86d2cdf78c91829f3936851` | Ubuntu 24.04 |
 | b | free5GC UPF<br>(go-upf) v1.2.4<br>***kernel module*** | 2025.01.02 | `88fbd8bb7b86761cbbcf1367acf2df7d81392ce3` | Ubuntu 24.04 |
