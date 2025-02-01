@@ -1043,7 +1043,7 @@ tui>
 ### Summary
 
 These measurement results show that eUPF has relatively outstanding performance even on Proxmox VE VM.
-Also, Open5GS shows significantly higher performance when measured with srsRAN. This suggests that the measurement environment, condition and tools have a large impact on the measurement results.
+Also, Open5GS shows significantly higher performance [when measured with srsRAN](https://github.com/s5uishida/simple_measurement_of_upf_performance_8#results). This suggests that the measurement environment, condition and tools have a large impact on the measurement results.
 
 If measuring using virtual machines, it would be better to measure on VMs on a hypervisor such as Proxmox VE.
 Also, it is good to select VirtIO as the network interface to ensure that the network does not become a bottleneck in the measurement.
