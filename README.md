@@ -150,7 +150,7 @@ Please refer to the following for building Simple PFCP Client, TRex and UPFs res
 - TRex v3.06 (2024.09.17) - https://github.com/s5uishida/install_trex
 - Open5GS v2.7.2 (2025.01.12) - https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
 - free5GC UPF (go-upf) v1.2.4 (2025.01.02) - https://free5gc.org/guide/
-- UPG-VPP v1.13.0 (2024.03.25) - https://github.com/s5uishida/install_vpp_upf_dpdk#annex_1
+- UPG-VPP v1.13.0 (2024.03.25) - https://github.com/s5uishida/install_vpp_upf_dpdk
 - eUPF v0.6.4 (2024.12.23) - https://github.com/s5uishida/install_eupf
 
 <a id="changes_pfcp"></a>
@@ -296,10 +296,10 @@ There is no change.
 
 See [here](https://github.com/s5uishida/install_vpp_upf_dpdk#changes_up) for the original files.
 
-- `openair-upf/startup.conf`  
+- `upg-vpp/startup.conf`  
 There is no change.
 
-- `openair-upf/init.conf`  
+- `upg-vpp/init.conf`  
 There is no change.
 
 <a id="changes_up_d"></a>
@@ -412,7 +412,7 @@ Please refer to the following for building Simple PFCP Client, TRex and UPFs res
 - TRex v3.06 (2024.09.17) - https://github.com/s5uishida/install_trex
 - Open5GS v2.7.2 (2025.01.12) - https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
 - free5GC UPF (go-upf) v1.2.4 (2025.01.02) - https://github.com/s5uishida/install_goupf
-- UPG-VPP v1.13.0 (2024.03.25) - https://github.com/s5uishida/install_vpp_upf_dpdk#annex_1
+- UPG-VPP v1.13.0 (2024.03.25) - https://github.com/s5uishida/install_vpp_upf_dpdk
 - eUPF v0.6.4 (2024.12.23) - https://github.com/s5uishida/install_eupf
 
 <a id="run"></a>
@@ -459,7 +459,7 @@ Please use the configuration files changed for TAP interface.
 
 #### c. Run UPG-VPP
 
-See [this](https://github.com/s5uishida/install_vpp_upf_dpdk#run_upg_vpp).
+See [this](https://github.com/s5uishida/install_vpp_upf_dpdk#run).
 
 <a id="run_up_d"></a>
 
