@@ -294,7 +294,7 @@ There is no change.
 
 #### c. Changes in configuration files of UPG-VPP
 
-See [here](https://github.com/s5uishida/install_vpp_upf_dpdk#changes_up) for the original files.
+See [here](https://github.com/s5uishida/install_vpp_upf_dpdk#conf) for the original files.
 
 - `upg-vpp/startup.conf`  
 There is no change.
