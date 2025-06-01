@@ -116,7 +116,7 @@ The network interfaces of each VM except VM-DUT are as follows.
 | | | ens20 | VirtIO | vmbr3 | 192.168.13.151/24 | N3 |
 | | | ens21 | VirtIO | vmbr4 | 192.168.14.151/24 | N4 |
 | | | ens22 | VirtIO | vmbr6 | 192.168.16.151/24 | N6 |
-| c | UPG-VPP | ens18 | VirtIO | vmbr1 | 10.0.0.151/24 | (NAPT NW) |
+| c | UPG-VPP | ~~ens18~~ | ~~VirtIO~~ | ~~vmbr1~~ | ~~10.0.0.151/24~~ | ~~(NAPT NW)~~ ***down*** |
 | | | ens19 | VirtIO | mgbr0 | 192.168.0.151/24 | (Mgmt NW) |
 | | | ens20 | VirtIO | vmbr3 | 192.168.13.151/24 | N3 ***(Under DPDK by vfio-pci)*** |
 | | | ens21 | VirtIO | vmbr4 | 192.168.14.151/24 | N4 ***(Under DPDK by vfio-pci)*** |
