@@ -171,7 +171,7 @@ See [here](https://github.com/s5uishida/install_trex#config) for the original fi
 - `/etc/trex_cfg.yaml`  
 There is no change.
 
-See [here](https://github.com/s5uishida/install_trex?tab=readme-ov-file#load_profile) for the original load profiles.
+See [here](https://github.com/s5uishida/install_trex#load_profile) for the original load profiles.
 
 - `/opt/trex/stl/gtp_1pkt_simple.py` for UpLink  
 There is no change.
