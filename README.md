@@ -410,7 +410,7 @@ Next, down the interface `ens18` of the VM-DUT to delete default GW.
 Please refer to the following for building Simple PFCP Client, TRex and UPFs respectively.
 - Simple PFCP Client (2025.01.16) - https://github.com/s5uishida/simple_pfcp_client
 - TRex v3.06 (2024.09.17) - https://github.com/s5uishida/install_trex
-- Open5GS v2.7.2 (2025.01.12) - https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
+- Open5GS v2.7.2 (2025.01.12) - https://github.com/s5uishida/install_open5gs_upf
 - free5GC UPF (go-upf) v1.2.4 (2025.01.02) - https://github.com/s5uishida/install_goupf
 - UPG-VPP v1.13.0 (2024.03.25) - https://github.com/s5uishida/install_vpp_upf_dpdk
 - eUPF v0.6.4 (2024.12.23) - https://github.com/s5uishida/install_eupf
