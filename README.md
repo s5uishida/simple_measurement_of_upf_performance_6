@@ -493,7 +493,7 @@ Please see below for methods for measuring UpLink and DownLink performances.
 
 In this measurement, the UDP payload size is set to 1400 bytes.
 
-| # | UPF / Date | UpLink<br>Gbps | <br>Kpps | <br>CPU%[1] | DownLink<br>Gbps | <br>Kpps | <br>CPU%[1] |
+| # | UPF / Date | UpLink<br>Gbps | <br>Kpps | (VM-TG)<br>CPU%[1] | DownLink<br>Gbps | <br>Kpps | (VM-TG)<br>CPU%[1] |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | a-1 | Open5GS UPF v2.7.2 (TUN)<br>2025.01.12 | Tx:1.79<br>Rx:1.08 | Tx:150.07<br>Rx:93.65 | 1.68 | Tx:1.74<br>Rx:1.33 | Tx:150.36<br>Rx:111.87 | 1.89 |
 | a-2 | Open5GS UPF v2.7.2 (TAP)<br>2025.01.12 | Tx:1.79<br>Rx:1.16 | Tx:150.14<br>Rx:100.07 | 1.56 | Tx:1.74<br>Rx:1.17 | Tx:150.11<br>Rx:98.55 | 1.51 |
